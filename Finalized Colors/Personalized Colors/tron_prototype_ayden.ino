@@ -82,14 +82,4 @@ void loop() {
     pulsePos++;
     if (pulsePos >= STRIP_1_NUM_LEDS) pulsePos = 0;
   }
-  
-  //strip2.setPixelColor(37, strip2.Color(BASE_R, BASE_G, BASE_B));
-  //strip2.setPixelColor(0, strip2.Color(BASE_R, BASE_G, BASE_B));
-  /*
-  strip2.clear();
-  for (int i = 0; i < strip2.numPixels(); i++) {
-    strip2.setPixelColor(i, strip2.Color(BASE_R, BASE_G, BASE_B));
-    strip2.show();
-    delay(50);
-  }*/
 }
