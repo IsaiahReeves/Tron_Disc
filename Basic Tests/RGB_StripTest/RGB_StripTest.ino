@@ -1,3 +1,4 @@
+//Test the synchronization and chase effect of LED strip
 #include <Adafruit_NeoPixel.h>
 
 #define LED_PIN    6      // Pin connected to the LED strip
