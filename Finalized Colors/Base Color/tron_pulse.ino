@@ -1,8 +1,11 @@
+// Complete base program for LED pulse
 #include <Adafruit_NeoPixel.h>
 
-#define PIN 6
-#define NUM_LEDS 120
-#define BRIGHTNESS 15
+#define PIN 6 //Data pin for the LED strip
+#define NUM_LEDS 120 //Number of LEDs
+#define BRIGHTNESS 15 //Adjust to avoid color washing out
+
+//Differing colors to show contrast
 
 // Pulse yellow
 #define PULSE_R 255
@@ -10,17 +13,13 @@
 #define PULSE_B 0
 
 // Base purple
-/*
-#define BASE_R 77
-#define BASE_G 0
-#define BASE_B 240
-*/
 #define BASE_R 255
 #define BASE_G 51
 #define BASE_B 0
 
 Adafruit_NeoPixel strip(NUM_LEDS, PIN, NEO_GRB + NEO_KHZ800);
 
+// Helper variables for non-blocking color changing
 unsigned long previousMillis = 0;
 const long interval = 100;
 int pulsePos = 0;
