@@ -1,7 +1,8 @@
+//Combined test for different sections of the LED strip
 #include <Adafruit_NeoPixel.h>
 
-#define LED_PIN    6
-#define LED_COUNT  120
+#define LED_PIN    6   //Data pin for the strip
+#define LED_COUNT  120 //Number of LEDs
 
 Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);
 
